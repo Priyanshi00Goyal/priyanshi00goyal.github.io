@@ -6,13 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Priyanshi Goyal | Developer Portfolio</title>
+    
+    <meta name="description" content="Explore Priyanshi Goyal's developer portfolio featuring Python development, C++, Data Structures and Algorithms, classical machine learning, and practical software projects.">
 
-    <meta name="description"
-          content="Priyanshi Goyal's personal developer portfolio.">
+    <meta name="author" content="Priyanshi Goyal">
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
     <script src="script.js" defer></script>
 </head>
+
+
+<!-- Floating Portfolio Avatar -->
+<div class="avatar-assistant" id="avatarAssistant">
+  <div class="avatar-greeting" id="avatarGreeting">
+    Hey there! 👋 Welcome to Priyanshi's portfolio!
+    <button
+      class="greeting-close"
+      id="closeGreeting"
+      aria-label="Close greeting"
+    >×</button>
+  </div>
+
+  <button
+    class="avatar-toggle"
+    id="avatarToggle"
+    aria-label="Meet my AI portfolio assistant"
+  >
+    <img
+      src="images/avatar.png"
+      alt="Priyanshi's AI portfolio avatar"
+      class="avatar-image"
+    >
+    <span class="avatar-status"></span>
+  </button>
+</div>
+
+
+<button id="backToTop" aria-label="Back to top" title="Back to top">
+  ↑
+</button>
 
 <body>
 
@@ -30,46 +65,55 @@
 
     <main>
 
-        <section id="home" class="hero">
-            <p class="eyebrow">COMPUTER SCIENCE STUDENT · DEVELOPER</p>
+        
+        <!-- HERO SECTION -->
+        <section class="hero" id="home">
+        <div class="hero-layout">
+
+            <div class="hero-content">
+            <p class="hero-eyebrow">WELCOME TO MY DIGITAL WORLD ✨</p>
 
             <h1>
-                PRIYANSHI
+                PRIYANSHI<br>
                 <span>GOYAL.</span>
             </h1>
 
             <h2>
-                I am a <span id="role">Python Developer</span>
+                I'm a <span id="role">Python Developer</span>
             </h2>
 
-            <p class="intro">
-                Turning curiosity into code.
-                Building projects, exploring machine learning,
-                and learning something new every day.
+            <p class="hero-description">
+                A Computer Science Engineering student passionate about
+                Python, software development, and classical machine learning.
+                I love turning ideas into practical projects.
             </p>
 
             <div class="hero-buttons">
-                <a href="#projects" class="btn primary">
-                    Explore My Work ↗
-                </a>
-
-                <a href="#contact" class="btn secondary">
-                    Let's Connect
-                </a>
+                <a href="#projects" class="btn btn-primary">Explore My Work ↗</a>
+                <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+            </div>
             </div>
 
-            <div class="social-links">
-                <a href="https://github.com/Priyanshi00Goyal"
-                   target="_blank" rel="noopener noreferrer">
-                    GitHub ↗
-                </a>
+         <div class="hero-visual">
+            <div class="avatar-orbit"></div>
 
-                <a href="https://www.linkedin.com/in/priyanshi-goyal-a72b42379/"
-                   target="_blank" rel="noopener noreferrer">
-                    LinkedIn ↗
-                </a>
+            <div class="avatar-frame">
+                <img
+                src="images/avatar.png"
+                alt="Priyanshi's portfolio avatar"
+                class="hero-avatar"
+                >
             </div>
+
+            <div class="avatar-caption">
+                <span class="caption-dot"></span>
+                DREAM · CODE · CREATE
+            </div>
+            </div>
+
+        </div>
         </section>
+
 
         <section id="about" class="content-section">
             <p class="eyebrow">01 / ABOUT ME</p>
@@ -153,6 +197,10 @@
                 Open to connecting with fellow developers,
                 learners, and collaborators.
             </p>
+            
+            <a href="files/resume.pdf" class="btn" download>
+                Download Resume ↓
+            </a>
 
             <a class="btn primary"
                href="https://www.linkedin.com/in/priyanshi-goyal-a72b42379/"
@@ -163,9 +211,15 @@
 
     </main>
 
-    <footer>
-        <p>© <span id="year"></span> Priyanshi Goyal. Built with curiosity.</p>
+    
+    <footer class="site-footer">
+    <p>Designed &amp; Built by <span>Priyanshi Goyal</span></p>
+    <p>Turning ideas into meaningful projects.</p>
+    <p class="footer-copy">
+        &copy; <span id="year"></span> Priyanshi Goyal. All rights reserved.
+    </p>
     </footer>
+
 
 </body>
 </html>

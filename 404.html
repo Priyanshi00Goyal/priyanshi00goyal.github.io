@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Page Not Found | Priyanshi Goyal</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+    }
+
+    .error-page h1 {
+      font-size: clamp(5rem, 15vw, 10rem);
+      margin: 0;
+      background: linear-gradient(90deg, var(--cyan), var(--violet));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .error-page p {
+      color: var(--muted);
+      margin: 12px 0 28px;
+    }
+
+    .error-page a {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 30px;
+      border: 1px solid var(--cyan);
+      color: var(--cyan);
+      text-decoration: none;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .error-page a:hover {
+      background: var(--cyan);
+      color: var(--background);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="error-page">
+    <h1>404</h1>
+
+    <h2>Oops! Lost in the digital universe.</h2>
+
+    <p>
+      The page you're looking for doesn't exist or may have moved.
+    </p>
+
+    <a href="./index.html">← Back to Home</a>
+  </main>
+</body>
+</html>
